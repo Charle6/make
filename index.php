@@ -1,6 +1,5 @@
 
 <?php
-include'index.html';
 include'data.php';
 if(isset($_POST['send'])){
     $email=$_POST['email'];
@@ -15,6 +14,12 @@ if(isset($_POST['send'])){
     }else{
         die(mysqli_error($con));
     }
+ echo
+    "
+    <script>
+    document.location.href = 'index.html';
+    </script>
 
+    "
 }
 ?>
