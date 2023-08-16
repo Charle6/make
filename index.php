@@ -1,7 +1,7 @@
 
 <?php
 include'index.html';
-include'data.php';
+include'send.php';
 if(isset($_POST['send'])){
     $email=$_POST['email'];
     $mobile=$_POST['subject'];
